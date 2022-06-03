@@ -48,7 +48,8 @@ jobs:
           access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
       - name: cp aliyun oss
         run: /
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed-files.outputs.all_changed_files }};
+          do
             ossutil cp -rf "${file}" oss://maples31-blog/
           done
           
