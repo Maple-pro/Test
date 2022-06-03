@@ -6,9 +6,9 @@ name: test actions/checkout
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ Yangfeng ]
+    branches: [ master ]
   pull_request:
-    branches: [ Yangfeng ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
 #   workflow_dispatch:
