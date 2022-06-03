@@ -50,7 +50,7 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }};
           do
-            ossutil cp -rf "${file}" oss://maples31-blog/
+            ossutil cp -rf "${file}" "oss://maples31-blog/${file}"
           done
           
 
