@@ -34,7 +34,8 @@ jobs:
       - name: print current files
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            cp '$file' './changed/$file'
+            echo "$file"
+            cp "$file" "./changed/$file"
           done
           ls .
 
